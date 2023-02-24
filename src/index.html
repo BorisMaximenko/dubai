@@ -5,27 +5,138 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="img/favicon.png" type="image/png">
-
   <title>Webpack</title>
 </head>
-<body>
-  <header>
-    <h1>Webpack</h1>
+<body class="page">
+  <header class="page__header header">
+    <div class="header__wrapper">
+      <div class="header__top container">
+        <a class="header__link" href="#">
+          <img class="header__logo" src="img/logo.png" width="115" height="auto" alt="Logo DubaiRealty">
+        </a>
+
+        <nav class="header__nav navigation navigation--top">
+          <div class="navigation__wrapper">
+            <ul class="navigation__menu menu ">
+              <li class="menu__item">
+                <a class="menu__link menu__link--drop-down-activator" href="#">
+                  Buy
+                  <i class="menu__icon">
+                    <svg class="menu__img" width="9" height="9">
+                      <use href="./img/sprite.svg#arrow-up"></use>
+                    </svg>
+                  </i>
+                </a>
+                <ul class="menu__drop-down-list menu__drop-down-list--close">
+                  <li class="menu__drop-down-item">
+                    <a class="menu__drop-down-link" href="#">
+                      Category number one
+                    </a>
+                  </li>
+                  <li class="menu__drop-down-item">
+                    <a class="menu__drop-down-link" href="#">
+                      Apartments in Dubai
+                    </a>
+                  </li>
+                  <li class="menu__drop-down-item">
+                    <a class="menu__drop-down-link" href="#">
+                      Category number twenty five
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Blog</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="navigation__contacts contacts">
+              <div class="contacts__wrapper">
+                <button class="contacts__button button">Book a consultation</button>
+                <a class="contacts__link" href="tel: +72126742510">+7 (212) 674-25-10</a>
+                <div class="contacts__lang">
+                  <button class="contacts__lang-button contacts__lang-button--active">EN</button>
+                  <button class="contacts__lang-button">RU</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="header__contacts contacts">
+          <div class="contacts__wrapper">
+            <button class="contacts__button button">Book a consultation</button>
+            <a class="contacts__link" href="tel: +72126742510">+7 (212) 674-25-10</a>
+            <div class="contacts__lang">
+              <button class="contacts__lang-button contacts__lang-button--active">EN</button>
+              <button class="contacts__lang-button">RU</button>
+            </div>
+          </div>
+        </div>
+
+        <button class="header__burger header__burger--close"></button>
+      </div>
+
+      <nav class="header__nav navigation navigation--close">
+        <div class="navigation__wrapper">
+          <ul class="navigation__menu menu ">
+            <li class="menu__item">
+              <a class="menu__link menu__link--drop-down-activator" href="#">
+                Buy
+                <i class="menu__icon">
+                  <svg class="menu__img" width="9" height="9">
+                    <use href="./img/sprite.svg#arrow-up"></use>
+                  </svg>
+                </i>
+              </a>
+              <ul class="menu__drop-down-list menu__drop-down-list--close">
+                <li class="menu__drop-down-item">
+                  <a class="menu__drop-down-link" href="#">
+                    Category number one
+                  </a>
+                </li>
+                <li class="menu__drop-down-item">
+                  <a class="menu__drop-down-link" href="#">
+                    Apartments in Dubai
+                  </a>
+                </li>
+                <li class="menu__drop-down-item">
+                  <a class="menu__drop-down-link" href="#">
+                    Category number twenty five
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Blog</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="navigation__contacts contacts">
+            <div class="contacts__wrapper">
+              <button class="contacts__button button">Book a consultation</button>
+              <a class="contacts__link" href="tel: +72126742510">+7 (212) 674-25-10</a>
+              <div class="contacts__lang">
+                <button class="contacts__lang-button contacts__lang-button--active">EN</button>
+                <button class="contacts__lang-button">RU</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
   </header>
-
-  <main>
-    <div class="img"></div>
-    <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-    </ul>
-  </main>
-
-  <footer>
-    <div class="image"></div>
-  </footer>
+  <main></main>
+  <footer></footer>
 </body>
 </html>
