@@ -28,13 +28,12 @@ a {
 .slider__main {
     padding-top: 12px;
     padding-left: 13px;
-    padding-bottom: 9px;
-    border-left: 4px solid #FCD54C;   
+    padding-bottom: 9px; 
 
     @media (min-width:768px) {
-        margin-top: 20px;
         padding-bottom: 21px;
         padding-left: 23px;
+        padding-top: 44px;
     } 
 
     @media (min-width: $desktop-width) {
@@ -111,6 +110,7 @@ a {
    height: 10px;
    display: block;
    transform: rotate(130deg);
+   z-index: 1;
 }
 .slider__niz {
     padding-top: 60px;
@@ -269,5 +269,27 @@ h1 {
 
     @media (min-width: $desktop-width) {
         font-size: 60px;
+    } 
+}
+
+
+.test__border {
+    height: 195px;
+    width: 63px;
+    border-top: 4px solid $primary;
+    border-bottom: 4px solid $primary;
+    border-left: 4px solid $primary;
+    position: absolute;
+
+    @media (min-width: $tablet-width) {
+        height: 229px;
+        width: 74px;  
+        margin-top: 20px;
+    }   
+
+    @media (min-width: $desktop-width) {
+        height: 383px;
+        width: 124px;
+        margin-top: 233px;
     } 
 }

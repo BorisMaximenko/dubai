@@ -1,6 +1,6 @@
 const toggleNavigation = () => {
     const toggleButton = document.querySelector(".header__burger");
-    const nav = document.querySelector(".navigation");
+    const nav = document.querySelector(".navigation--close");
 
     toggleButton.addEventListener("click", (event) => {
         event.preventDefault();
@@ -22,3 +22,4 @@ const toggleNavigation = () => {
 };
 
 toggleNavigation();
+
