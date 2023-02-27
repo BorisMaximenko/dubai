@@ -5,27 +5,216 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="img/favicon.png" type="image/png">
-
   <title>Webpack</title>
 </head>
-<body>
-  <header>
-    <h1>Webpack</h1>
+<body class="page">
+  <header class="page__header header">
+    <div class="header__wrapper">
+      <div class="header__top container">
+        <a class="header__link" href="#">
+          <img class="header__logo" src="img/logo.png" width="115" height="auto" alt="Logo DubaiRealty">
+        </a>
+
+        <nav class="header__nav navigation navigation--top">
+          <div class="navigation__wrapper">
+            <ul class="navigation__menu menu ">
+              <li class="menu__item">
+                <a class="menu__link menu__link--drop-down-activator" href="#">
+                  Buy
+                  <i class="menu__icon">
+                    <svg class="menu__img" width="9" height="9">
+                      <use href="./img/sprite.svg#arrow-up"></use>
+                    </svg>
+                  </i>
+                </a>
+                <ul class="menu__drop-down-list menu__drop-down-list--close">
+                  <li class="menu__drop-down-item">
+                    <a class="menu__drop-down-link" href="#">
+                      Category number one
+                    </a>
+                  </li>
+                  <li class="menu__drop-down-item">
+                    <a class="menu__drop-down-link" href="#">
+                      Apartments in Dubai
+                    </a>
+                  </li>
+                  <li class="menu__drop-down-item">
+                    <a class="menu__drop-down-link" href="#">
+                      Category number twenty five
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Blog</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="navigation__contacts contacts">
+              <div class="contacts__wrapper">
+                <button class="contacts__button button">Book a consultation</button>
+                <a class="contacts__link" href="tel: +72126742510">+7 (212) 674-25-10</a>
+                <div class="contacts__lang">
+                  <button class="contacts__lang-button contacts__lang-button--active">EN</button>
+                  <button class="contacts__lang-button">RU</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="header__contacts contacts">
+          <div class="contacts__wrapper">
+            <button class="contacts__button button">Book a consultation</button>
+            <a class="contacts__link" href="tel: +72126742510">+7 (212) 674-25-10</a>
+            <div class="contacts__lang">
+              <button class="contacts__lang-button contacts__lang-button--active">EN</button>
+              <button class="contacts__lang-button">RU</button>
+            </div>
+          </div>
+        </div>
+
+        <button class="header__burger header__burger--close"></button>
+      </div>
+
+      <nav class="header__nav navigation navigation--close">
+        <div class="navigation__wrapper">
+          <ul class="navigation__menu menu ">
+            <li class="menu__item">
+              <a class="menu__link menu__link--drop-down-activator" href="#">
+                Buy
+                <i class="menu__icon">
+                  <svg class="menu__img" width="9" height="9">
+                    <use href="./img/sprite.svg#arrow-up"></use>
+                  </svg>
+                </i>
+              </a>
+              <ul class="menu__drop-down-list menu__drop-down-list--close">
+                <li class="menu__drop-down-item">
+                  <a class="menu__drop-down-link" href="#">
+                    Category number one
+                  </a>
+                </li>
+                <li class="menu__drop-down-item">
+                  <a class="menu__drop-down-link" href="#">
+                    Apartments in Dubai
+                  </a>
+                </li>
+                <li class="menu__drop-down-item">
+                  <a class="menu__drop-down-link" href="#">
+                    Category number twenty five
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Blog</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="navigation__contacts contacts">
+            <div class="contacts__wrapper">
+              <button class="contacts__button button">Book a consultation</button>
+              <a class="contacts__link" href="tel: +72126742510">+7 (212) 674-25-10</a>
+              <div class="contacts__lang">
+                <button class="contacts__lang-button contacts__lang-button--active">EN</button>
+                <button class="contacts__lang-button">RU</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <div class="img"></div>
-    <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-    </ul>
-  </main>
+  
+  <main class="container">
 
-  <footer>
-    <div class="image"></div>
-  </footer>
+    <div class="slider">
+      <div class="bigslider">
+          <div class="slider__main">
+              <p class="lor">LOREM IPSUM</p>
+              <p class="wel">Welcome Home To Luxury</p>
+              <a class="slider__link" href="#">Book a consultation
+                  <span class="arrow"></span>
+              </a>
+          </div>
+
+          <div class="social">
+              <a href="" class="social__icon"><svg width="12" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.71751 6.59604L7.06253 4.47385H4.90527V3.0967C4.90527 2.51611 5.20662 1.95018 6.17279 1.95018H7.15352V0.143372C7.15352 0.143372 6.26354 0 5.41262 0C3.63605 0 2.4748 1.01643 2.4748 2.85645V4.47385H0.5V6.59604H2.4748V11.7263H4.90527V6.59604H6.71751Z" fill="#E8E8E8"/>
+                </svg></a>
+              <a href="" class="social__icon"><svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.6444 2.77289C11.6522 2.88652 11.6522 3.00018 11.6522 3.11381C11.6522 6.57973 9.13672 10.5733 4.5392 10.5733C3.12278 10.5733 1.80701 10.1431 0.700195 9.39634C0.90144 9.42067 1.09492 9.42879 1.30391 9.42879C2.47262 9.42879 3.54848 9.01484 4.40761 8.30867C3.30854 8.28431 2.38749 7.52943 2.07015 6.49046C2.22496 6.51479 2.37975 6.53103 2.5423 6.53103C2.76675 6.53103 2.99123 6.49855 3.20019 6.44176C2.05469 6.19823 1.19553 5.14304 1.19553 3.86868V3.83623C1.52833 4.03103 1.91536 4.15279 2.32555 4.169C1.65217 3.69821 1.21102 2.89464 1.21102 1.98554C1.21102 1.49853 1.33483 1.0521 1.55156 0.662481C2.78221 2.2534 4.63206 3.29235 6.70634 3.40601C6.66765 3.2112 6.64442 3.0083 6.64442 2.80537C6.64442 1.36054 7.75897 0.183594 9.14441 0.183594C9.86422 0.183594 10.5144 0.500154 10.971 1.01152C11.536 0.89789 12.0778 0.678722 12.5577 0.378402C12.3719 0.987186 11.9772 1.49855 11.4586 1.82321C11.9617 1.76642 12.4494 1.62028 12.8983 1.41738C12.5578 1.93684 12.132 2.39949 11.6444 2.77289Z" fill="#E8E8E8"/>
+                </svg></a>
+              <a href="" class="social__icon"><svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.59191 6.48588V2.70956C6.98645 3.34037 8.06651 3.94976 9.34392 4.60675C8.29034 5.16845 6.98645 5.79869 5.59191 6.48588ZM13.3637 0.831416C13.1231 0.526743 12.7132 0.289581 12.2767 0.211064C10.9937 -0.0231466 2.98969 -0.0238128 1.70741 0.211064C1.35738 0.274144 1.04569 0.426618 0.777933 0.663513C-0.350254 1.67014 0.00326633 7.06835 0.275203 7.94278C0.389555 8.32128 0.537383 8.59424 0.723555 8.77342C0.963416 9.01031 1.29183 9.17343 1.66905 9.24657C2.72542 9.45663 8.16763 9.57407 12.2543 9.27812C12.6309 9.21504 12.9642 9.04667 13.227 8.79971C14.2701 7.79711 14.199 2.09574 13.3637 0.831416Z" fill="#E8E8E8"/>
+                </svg>
+                </a>
+              <a href="" class="social__icon"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.6002 4.2536C12.6002 3.61412 12.4524 3.25885 12.3045 2.83252C12.1567 2.47725 11.935 2.12198 11.6393 1.83777C11.3437 1.4825 10.9741 1.34039 10.6045 1.19828C10.235 1.05617 9.7915 0.985117 9.12628 0.914063C8.46106 0.914062 8.23933 0.914062 6.61324 0.914062C5.06107 0.914062 4.83933 0.914062 4.17411 0.914062C3.50889 0.914062 3.13933 1.05617 2.69585 1.19828C2.32628 1.34039 1.95672 1.55355 1.66106 1.83777C1.36541 2.19304 1.14367 2.47725 0.995847 2.90358C0.848021 3.25885 0.774108 3.68517 0.700195 4.2536C0.700195 4.89309 0.700195 5.10625 0.700195 6.59839C0.700195 8.16158 0.700195 8.37474 0.700195 8.94317C0.700195 9.58266 0.848021 9.93793 0.995847 10.3643C1.14367 10.7195 1.36541 11.0748 1.66106 11.359C2.03063 11.7143 2.32628 11.8564 2.69585 11.9985C3.06541 12.1406 3.50889 12.2117 4.17411 12.2827C4.83933 12.2827 4.98715 12.2827 6.61324 12.2827C8.23933 12.2827 8.46106 12.2827 9.05237 12.2827C9.71759 12.2827 10.0872 12.1406 10.5306 11.9985C10.9002 11.8564 11.2698 11.6432 11.5654 11.359C11.935 11.0037 12.0828 10.7195 12.2306 10.3643C12.3785 10.009 12.4524 9.58266 12.5263 8.94317C12.6002 8.30369 12.5263 8.16158 12.5263 6.59839C12.5263 5.0352 12.6002 4.89309 12.6002 4.2536ZM6.61324 9.58266C4.91324 9.58266 3.5828 8.23263 3.5828 6.66944C3.5828 5.0352 4.98715 3.75623 6.61324 3.75623C8.31324 3.75623 9.64367 5.10625 9.64367 6.66944C9.71759 8.23263 8.31324 9.58266 6.61324 9.58266ZM9.7915 4.2536C9.42194 4.2536 9.05237 3.96939 9.05237 3.54306C9.05237 3.18779 9.34802 2.83252 9.7915 2.83252C10.1611 2.83252 10.5306 3.11674 10.5306 3.54306C10.5306 3.96939 10.235 4.2536 9.7915 4.2536Z" fill="#E8E8E8"/>
+                <path d="M8.60849 6.59741C8.60849 7.66322 7.72154 8.51587 6.61284 8.51587C5.50414 8.51587 4.61719 7.66322 4.61719 6.59741C4.61719 5.53159 5.57806 4.75 6.61284 4.75C7.72154 4.75 8.60849 5.60265 8.60849 6.59741Z" fill="#E8E8E8"/>
+                </svg>
+                </a>
+              <a href="" class="social__icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.3565 0.742188H0.947532C0.424756 0.742188 0 1.13897 0 1.62606V12.1176C0 12.6047 0.424756 13.0015 0.947532 13.0015H12.3565C12.8793 13.0015 13.307 12.6047 13.307 12.1176V1.62606C13.307 1.13897 12.8793 0.742188 12.3565 0.742188ZM4.02181 11.2502H2.04952V5.39963H4.02479V11.2502H4.02181ZM3.03567 4.60058C2.40299 4.60058 1.89209 4.12718 1.89209 3.54705C1.89209 2.96692 2.40299 2.49352 3.03567 2.49352C3.66538 2.49352 4.17924 2.96692 4.17924 3.54705C4.17924 4.12992 3.66835 4.60058 3.03567 4.60058ZM11.4149 11.2502H9.44265V8.40425C9.44265 7.72561 9.4278 6.85268 8.41789 6.85268C7.39016 6.85268 7.23273 7.59153 7.23273 8.355V11.2502H5.26044V5.39963H7.15253V6.19867H7.17927C7.44362 5.73895 8.08818 5.2546 9.0476 5.2546C11.0437 5.2546 11.4149 6.46685 11.4149 8.04304V11.2502Z" fill="#E8E8E8"/>
+                </svg>
+                </a>
+          </div>
+
+      </div>
+
+      <div class="slider__niz">
+
+        <div class="slider__niz-left">
+            <a class="niz__prev" href="">Prev</a>
+            <a class="niz__next" href="">Next</a>
+        </div>
+
+        <div class="swiper swiper-right">
+          <div class="swiper__numb">
+              <h1> 01</h1>
+              <p class="h1-niz">Lorem Ipsum Dolorem apset</p>
+          </div>
+          <div class="swiper__numb">
+              <h1 > 02</h1>
+              <p class="h1-niz">  Lorem Ipsum Dolorem apset</p>
+          </div>
+          <div class="swiper__numb">
+              <h1> 03</h1>
+              <p class="h1-niz">Lorem Ipsum Dolorem apset</p>
+          </div>
+      </div>
+
+     </div>
+
+  </div>
+  <div class="swiper">
+      <div class="swiper__numb">
+          <h1> 01</h1>
+          <p class="h1-niz">Lorem Ipsum Dolorem apset</p>
+      </div>
+      <div class="swiper__numb">
+          <h1 > 02</h1>
+          <p class="h1-niz">  Lorem Ipsum Dolorem apset</p>
+      </div>
+      <div class="swiper__numb">
+          <h1> 03</h1>
+          <p class="h1-niz">Lorem Ipsum Dolorem apset</p>
+      </div>
+  </div>
+
+  </main>
+  <footer></footer>
 </body>
 </html>

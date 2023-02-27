@@ -1,0 +1,17 @@
+@mixin font-face($name, $weight, $path) {
+    @font-face {
+      font-display: swap;
+      font-family: $name;
+      font-style: normal;
+      font-weight: $weight;
+      src: url('#{$path}.woff2') format('woff2'),
+      url('#{$path}.woff') format('woff'),
+      url('#{$path}.ttf') format('ttf');
+    }
+  }
+
+  @mixin list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }

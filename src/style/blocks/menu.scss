@@ -1,0 +1,121 @@
+.menu {
+    @include list();
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-top: 52px;
+    padding-bottom: 60px;
+
+    @media (min-width:$tablet-width) {
+        padding-left: 278px;
+        padding-top: 86px;
+        padding-bottom: 78px; 
+
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        column-gap: 20px;
+        text-decoration: none;
+        color: $lightest;
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        text-transform: uppercase;
+
+        fill: $lightest;
+
+        &--active {
+            color: $primary;
+        }
+
+       
+    }
+
+    &__link--drop-down-activator {
+        & .menu__icon {
+            display: flex;
+            align-items: center;   
+            transition: transform 0.5s;
+            transform: rotate(180deg);
+        }      
+    }
+
+    &__link--drop-down-activator.menu__link--active {
+        & .menu__icon {
+          transform: rotate(0);
+        }
+      }
+   
+
+    &__drop-down-list {
+        @include list();
+        padding-left: 22px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+
+        &--close {
+            display: none;
+        }
+    }
+
+    &__drop-down-link {
+        text-decoration: none;
+        color: $lightest;
+        
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    @media (min-width:$desktop-width) {
+        & {
+            padding: 0;
+            flex-direction: row;
+            column-gap: 20px;
+            align-items: center;
+
+            &__link {
+                position: relative;
+                font-size: 14px;
+                line-height: 17px;
+                column-gap: 6px;
+
+                &--active {
+                    border-bottom: 1px solid $primary;
+                }
+            }
+
+            &__drop-down-list {
+                position: absolute;
+                top: 35px;
+                left: 0;  
+                padding: 0;
+                border: 1px solid $neutral;
+            }
+
+            &__drop-down-item {
+                padding-top: 10px;
+                padding-left: 20px;
+                padding-bottom: 10px;
+                padding-right: 20px;
+
+                &:hover, &:focus {
+                    background-color: $primary;
+                }
+            }
+
+            &__drop-down-item:hover &__drop-down-link,
+            &__drop-down-item:focus &__drop-down-link {
+                color: $darkest;
+            }
+        }
+    }
+}

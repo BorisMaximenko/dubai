@@ -1,0 +1,42 @@
+.navigation {
+    position: relative;
+    width: 100%;
+    display: block;
+  
+    &--close {
+      display: none;
+    }
+  
+    &__wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0 36px;
+      width: 100%;
+    }
+
+    &--top {
+      display: none;
+
+      @media (min-width:$desktop-width) {
+        display: flex;
+      }
+    }
+
+    &--top &__wrapper {
+      position: static;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    &__contacts {
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+
+      @media (min-width:$desktop-width) {
+        display: flex; 
+      }
+    }
+  }

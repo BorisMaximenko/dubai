@@ -1,4 +1,13 @@
-@import '~normalize.css';
-@import 'style/fonts';
-@import 'style/var';
-@import 'style/style';
+@import "./style/global/normalize.css";
+@import "./style/global/mixins.scss";
+@import "./style/global/fonts.scss";
+@import "./style/global/variables.scss";
+@import "./style/global/global.scss";
+@import "./style/blocks/button.scss";
+@import "./style/blocks/container.scss";
+@import "./style/blocks/page.scss";
+@import "./style/blocks/header.scss";
+@import "./style/blocks/navigation.scss";
+@import "./style/blocks/menu.scss";
+@import "./style/blocks/contacts.scss";
+@import "./style/hero/hero.scss"; 

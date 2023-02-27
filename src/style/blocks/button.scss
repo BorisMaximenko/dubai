@@ -1,0 +1,21 @@
+.button {
+    cursor: pointer;
+    border: none;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+
+    background-color: $primary;
+
+    &--big {
+        padding: 23px 54px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+}
